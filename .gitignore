@@ -1,0 +1,23 @@
+# Ignore node_modules at the root level
+node_modules/
+
+# Ignore environment files in the parent directory
+.env
+
+# Ignore frontend specific files and directories
+/frontend/node_modules/
+/frontend/.env
+/frontend/.vscode/
+/frontend/dist/
+
+frontend/assets/
+frontend/manifest.json
+frontend/robots.txt
+
+# Ignore backend specific files
+/backend/node_modules/
+/backend/.env
+/backend/api/config
+
+ecosystem.config.js
+
