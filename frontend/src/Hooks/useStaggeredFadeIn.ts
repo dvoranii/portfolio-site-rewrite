@@ -3,15 +3,15 @@ import { useState, useEffect, useRef } from "react";
 export const useStaggeredFadeIn = (
   itemCount: number,
   delay = 200,
-  threshold = 0.5 // Increased threshold
+  threshold = 0.5
 ) => {
-  const [visibleItems, setVisibleItems] = useState<number[]>([]); // Changed to array for easier mapping
+  const [visibleItems, setVisibleItems] = useState<number[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const timeoutsRef = useRef<number[]>([]);
-  const hasAnimatedRef = useRef(false); // Track if animation has run
+  const hasAnimatedRef = useRef(false);
 
   useEffect(() => {
-    if (hasAnimatedRef.current) return; // Don't observe if already animated
+    if (hasAnimatedRef.current) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -19,11 +19,9 @@ export const useStaggeredFadeIn = (
           if (entry.isIntersecting) {
             hasAnimatedRef.current = true;
 
-            // Clear any existing timeouts
             timeoutsRef.current.forEach((timeout) => clearTimeout(timeout));
             timeoutsRef.current = [];
 
-            // Start the staggered animation
             for (let i = 0; i < itemCount; i++) {
               const timeout = setTimeout(() => {
                 setVisibleItems((prev) => [...prev, i]);
@@ -31,11 +29,11 @@ export const useStaggeredFadeIn = (
               timeoutsRef.current.push(timeout);
             }
 
-            observer.disconnect(); // Fully disconnect instead of just unobserve
+            observer.disconnect();
           }
         });
       },
-      { threshold, rootMargin: "0px 0px -40px 0px" } // Added rootMargin
+      { threshold, rootMargin: "0px 0px -40px 0px" }
     );
 
     const currentRef = containerRef.current;

@@ -34,7 +34,7 @@ const About = () => {
           transition: "opacity 0.3s ease-out",
         }}
       >
-        <SectionTitle textContent="About"></SectionTitle>
+        <SectionTitle textContent="About" />
         <S.AboutContent>
           <S.AboutText>
             <span>Full-Stack Engineer</span> specializing in{" "}
@@ -116,6 +116,15 @@ const About = () => {
             &mdash;&nbsp;Let's connect to discuss how I can bring this expertise
             to your company&nbsp;&mdash;
           </S.CallToAction>
+
+          <S.ConnectLinkWrapper>
+            <S.ConnectLink href="#skills">
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+              </svg>
+              Connect
+            </S.ConnectLink>
+          </S.ConnectLinkWrapper>
         </S.AboutContent>
       </S.AboutWrapper>
     </Element>

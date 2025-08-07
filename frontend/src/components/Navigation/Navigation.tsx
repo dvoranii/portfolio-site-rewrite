@@ -56,10 +56,7 @@ const Navigation: React.FC<NavigationProps> = ({ className }) => {
   };
 
   return (
-    <S.NavWrapper
-      className={className}
-      $isFixed={isMobileView || isFixed} // Mobile always fixed, desktop based on scroll
-    >
+    <S.NavWrapper className={className} $isFixed={isMobileView || isFixed}>
       <S.Nav>
         <S.NavLogoWrapper>
           <S.NavLogo loading="lazy" src={NavLogo} alt="Portfolio Logo" />
@@ -77,7 +74,7 @@ const Navigation: React.FC<NavigationProps> = ({ className }) => {
             </S.NavLink>
           </li>
           <li>
-            <S.NavLink href="#projects-section" onClick={handleNavLinkClick}>
+            <S.NavLink href="#projects" onClick={handleNavLinkClick}>
               Projects
             </S.NavLink>
           </li>

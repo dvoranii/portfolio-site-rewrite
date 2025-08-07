@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 import { useScrollOpacity } from "../../Hooks/useScrollOpacity";
 
 const Skills = () => {
-  const opacity = useScrollOpacity("skills", 150, 0.3);
+  const opacity = useScrollOpacity("skills", 150, 0.5);
   return (
     <Element name="skills">
       <S.SkillsWrapper
@@ -42,7 +42,7 @@ const Skills = () => {
                           src={skill.hoverLogo}
                           loading="lazy"
                           alt={skill.hoverLogoAlt}
-                          title="TypeScript"
+                          title={skill.title}
                           className={skill.logoClassName}
                         />
                       </S.SkillImageContainer>

@@ -179,3 +179,62 @@ export const SocialButtonsWrapper = styled.div`
   border-right: 1px solid #bbb;
   gap: 1.2rem;
 `;
+
+export const ConnectLinkWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2rem;
+`;
+
+export const ConnectLink = styled.a`
+  color: #0777da;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 56px;
+  max-width: 180px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1.2rem;
+
+  background: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0 32px;
+  transition: all 0.35s linear;
+
+  & > svg {
+    height: 57px;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    & > rect {
+      fill: none;
+      stroke: #0777da;
+      stroke-width: 2;
+      stroke-dasharray: 422, 0;
+      transition: all 0.35s linear;
+    }
+  }
+
+  &:hover {
+    background: #f2c94c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+
+    & > svg > rect {
+      stroke: #0777da;
+      stroke-width: 5;
+      stroke-dasharray: 40, 315;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+`;

@@ -63,7 +63,6 @@ export const SkillTilt = styled(Tilt)`
 export const SkillCard = styled.div`
   width: 100%;
   height: 100%;
-  padding: 20px;
   border-radius: 8px;
   transition: transform 0.3s ease;
 
@@ -72,6 +71,7 @@ export const SkillCard = styled.div`
     font-family: "Montserrat", sans-serif;
     line-height: 1.5;
     margin-top: 12px;
+    text-align: center;
 
     @media screen and (max-width: 380px) {
       font-size: 12px !important;

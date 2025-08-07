@@ -21,6 +21,7 @@ interface ScrollerProps {
 export const Scroller = styled.div<ScrollerProps>`
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 2.4rem;
 
   ul {
     margin: 0;
@@ -91,7 +92,7 @@ export const IntroHeadingWrapper = styled.div`
 `;
 export const IntroHeading = styled.h3`
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
   color: #0777da;
   margin: 0 0 1rem;
   position: relative;
