@@ -75,7 +75,7 @@ export const CallToAction = styled.p`
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: clamp(18px, 2vw, 1.4rem);
-  color: #555;
+  color: #333;
   margin-top: 2rem;
   text-align: center;
   padding-top: 2.4rem;
@@ -158,12 +158,6 @@ export const Skill = styled.div`
   }
   &:nth-child(10):hover {
     border-color: #06d6a0;
-  }
-
-  &:hover {
-    transform: scale(1.05) translateY(-4px);
-    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15);
-    cursor: default;
   }
 `;
 

@@ -25,8 +25,8 @@ export const TitleContainer = styled.div<TitleContainerProps>`
 `;
 
 interface TitleInnerProps {
-  $backgroundWidth?: number;
-  $backgroundPosition?: number;
+  $backgroundWidth?: string;
+  $backgroundPosition?: string;
 }
 
 export const TitleInner = styled.div<TitleInnerProps>`
@@ -36,9 +36,9 @@ export const TitleInner = styled.div<TitleInnerProps>`
   &::before {
     content: "";
     width: ${(props) =>
-      props.$backgroundWidth ? `${props.$backgroundWidth}px` : "74px"};
+      props.$backgroundWidth ? `${props.$backgroundWidth}` : "74px"};
     left: ${(props) =>
-      props.$backgroundPosition ? `${props.$backgroundPosition}%` : "71%"};
+      props.$backgroundPosition ? `${props.$backgroundPosition}` : "71%"};
     height: 32px;
     background-color: #f2c94c;
     position: absolute;

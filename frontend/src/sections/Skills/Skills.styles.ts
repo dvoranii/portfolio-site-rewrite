@@ -11,7 +11,7 @@ export const SkillsWrapper = styled.section`
 export const SkillsContainer = styled.div`
   margin: 0 auto;
   padding-top: 4.8rem;
-  overflow: hidden !important;
+  /* overflow: hidden !important; */
 `;
 
 export const SkillsGrid = styled.div`
@@ -43,7 +43,7 @@ export const SkillsGrid = styled.div`
 
 export const SkillTilt = styled(Tilt)`
   width: 90% !important;
-  /* height: 100% !important; */
+  /* box-shadow: 4px 4px 8px red !important; */
 
   @media screen and (max-width: 680px) {
     width: 350px !important;
@@ -64,7 +64,6 @@ export const SkillCard = styled.div`
   width: 100%;
   height: 100%;
   padding: 20px;
-  background: ${({ theme }) => theme.cardBackground};
   border-radius: 8px;
   transition: transform 0.3s ease;
 
@@ -92,7 +91,6 @@ export const SkillLogo = styled.img`
 
 export const SkillHoverLogo = styled(SkillLogo)`
   position: absolute;
-  top: 0;
   left: 0;
   opacity: 0;
 `;
