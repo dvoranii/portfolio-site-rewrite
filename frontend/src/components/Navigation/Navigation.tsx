@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./Navigation.styles";
-import SocialButtons from "./Components/SocialButtons/SocialButtons";
+import SocialButtons from "./SocialButtons/SocialButtons";
 
 import NavLogo from "../../assets/images/Navigation/headerLogo.png";
 

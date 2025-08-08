@@ -6,6 +6,7 @@ import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
 import Companies from "./sections/Companies/Companies";
 import Projects from "./sections/Projects/Projects";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Skills />
         <Companies />
         <Projects />
+        <Contact />
       </HelmetProvider>
     </>
   );

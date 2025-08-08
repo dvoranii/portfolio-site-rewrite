@@ -6,7 +6,7 @@ export const ProjectsSection = styled.section`
 `;
 
 export const ProjectsWrapper = styled.div`
-  padding: 0 2.4rem 0;
+  padding: 0 2.4rem 4.8rem;
   position: relative;
   max-width: 1600px;
   margin: 0 auto;
@@ -23,6 +23,7 @@ export const GridItem = styled.div`
   padding: 1rem;
   position: relative;
   overflow: hidden; // Crucial for containing the zoom effect
+  /* border: 1px solid black; */
 `;
 
 // New inner div for background content
@@ -33,7 +34,7 @@ export const GridItemBackground = styled.div`
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   transition: all 0.3s ease;
   z-index: 0;
@@ -56,6 +57,7 @@ export const ProjectsGrid = styled.div`
   &:hover ${GridItem}:hover ${GridItemBackground} {
     filter: none;
     transform: scale(1.05);
+    cursor: pointer;
   }
 
   &:hover ${GridItem}:hover img {
@@ -64,7 +66,6 @@ export const ProjectsGrid = styled.div`
   }
 `;
 
-// Updated project components with new structure
 // Row 1
 export const Project1 = styled(GridItem)`
   grid-column: span 3;
@@ -88,7 +89,7 @@ export const Project3 = styled(GridItem)`
     height: auto;
     position: relative;
     z-index: 1;
-    transition: all 0.3s ease; // Add transition for smooth effect
+    transition: all 0.3s ease;
   }
 `;
 
@@ -99,17 +100,21 @@ export const Project4 = styled(GridItem)`
 // Row 3
 export const Project5 = styled(GridItem)`
   grid-column: span 1;
+  height: 370px;
+  background: #000;
 `;
 
 export const Project6 = styled(GridItem)`
-  grid-column: span 2;
+  grid-column: span 3;
+  height: 370px;
 `;
 
 export const Project7 = styled(GridItem)`
-  grid-column: span 1;
+  grid-column: span 2;
+  height: 400px;
 `;
 
 // Row 4
 export const Project8 = styled(GridItem)`
-  grid-column: span 4;
+  grid-column: span 2;
 `;

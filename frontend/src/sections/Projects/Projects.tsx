@@ -7,8 +7,11 @@ import GUMThumb from "../../assets/images/Projects/GUM.webp";
 import YMCAThumb from "../../assets/images/Projects/YMCA-BG.png";
 import ElegantWhite from "../../assets/images/Projects/elegant-white-bg.jpg";
 import OPThumb from "../../assets/images/Projects/OutpostThumb.webp";
-
+import OGThumb from "../../assets/images/Projects/og-thumb.webp";
+import CGLThumb from "../../assets/images/Projects/CGL-Thumb.webp";
 import FSFThumb from "../../assets/images/Projects/fsf-portfolio-thumbnail.png";
+import IldiDevThumb from "../../assets/images/Projects/ildidev-thumb.png";
+import PersonalProjectsThumb from "../../assets/images/Projects/personal-projects-thumb.png";
 
 const Projects = () => {
   const styles = useScrollOpacity("projects", 150, 0.4, {
@@ -66,16 +69,36 @@ const Projects = () => {
 
                 {/* Row 3-4 */}
                 <S.Project5>
-                  <S.GridItemBackground />
+                  <S.GridItemBackground
+                    style={{
+                      backgroundImage: `url(${CGLThumb})`,
+                      backgroundPosition: "-10px",
+                    }}
+                  />
                 </S.Project5>
                 <S.Project6>
-                  <S.GridItemBackground />
+                  <S.GridItemBackground
+                    style={{
+                      backgroundImage: `url(${OGThumb})`,
+                      backgroundPosition: "0px -130px",
+                    }}
+                  />
                 </S.Project6>
                 <S.Project7>
-                  <S.GridItemBackground />
+                  <S.GridItemBackground
+                    style={{
+                      backgroundImage: `url(${PersonalProjectsThumb})`,
+                      backgroundPosition: "0px -25px",
+                    }}
+                  />
                 </S.Project7>
                 <S.Project8>
-                  <S.GridItemBackground />
+                  <S.GridItemBackground
+                    style={{
+                      backgroundImage: `url(${IldiDevThumb})`,
+                      backgroundPosition: "0px",
+                    }}
+                  />
                 </S.Project8>
               </S.ProjectsGrid>
             </S.ProjectsGridWrapper>

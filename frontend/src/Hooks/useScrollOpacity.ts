@@ -89,7 +89,7 @@ export function useScrollOpacity(
       const fadeEndBrightness = windowHeight - elementHeight * fadeEndFactor;
 
       const fadeStartBg = windowHeight - offset * 2;
-      const fadeEndBg = windowHeight - elementHeight * 1.5;
+      const fadeEndBg = windowHeight - elementHeight * 1;
 
       let brightnessProgress = 0;
       if (

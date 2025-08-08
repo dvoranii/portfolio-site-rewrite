@@ -1,8 +1,8 @@
 import * as S from "./SocialButtons.styles";
 
-import LinkedInLogo from "../../../../assets/images/Navigation/logo-linkedin.svg";
-import GithubLogo from "../../../../assets/images/Navigation/logo-github.svg";
-import CodepenLogo from "../../../../assets/images/Navigation/logo-codepen.svg";
+import LinkedInLogo from "../../../assets/images/Navigation/logo-linkedin.svg";
+import GithubLogo from "../../../assets/images/Navigation/logo-github.svg";
+import CodepenLogo from "../../../assets/images/Navigation/logo-codepen.svg";
 
 const SocialButtons: React.FC = () => {
   return (
